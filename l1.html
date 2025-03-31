@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpmitra Login</title>
+    <link rel="stylesheet" href="p1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="loginfile">
+    <header class="header">
+
+        <div class="logo">HelpMitra</div>
+        <form class="search-box">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">🧠</button>
+        </form>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#serv">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="l1.html" class="login-btn">Login</a>
+
+    </header>
+
+    <section id="log-on">
+        <div class="container" id="form-container">
+            <h3 id="form-title">Login</h3>
+
+            <form id="login-form">
+                <input type="email" class="inputfile" placeholder="Email" required>
+                <input type="password" class="inputfile" placeholder="Password" required>
+                <button type="submit" oncliclick="location.href='p2.html'" class="btnlog">Login</button>
+            </form>
+            <form id="signup-form" style="display: none;">
+                <input type="text" class="inputfile" placeholder="Full Name" required>
+                <input type="email" class="inputfile" placeholder="Email" required>
+                <input type="password" class="inputfile" placeholder="Password" required>
+                <button type="submit" onclick="location.href='p2.html'" class="btnlog">Sign Up</button>
+            </form>
+            <p class="toggle" onclick="toggleForm()">Don't have an account? Sign Up</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="#">FAQ</a> |
+                <a href="#">Community</a> |
+                <a href="#">Blog</a> |
+                <a href="#">Resources</a>
+            </div>
+
+            <div class="social-icons">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M22 12A10 10 0 1 0 12 22V14H9v-2h3V9.5a3.5 3.5 0 0 1 3.5-3.5h2.5V8h-2c-.55 0-1 .45-1 1V12h3l-.5 2h-2.5v8A10 10 0 0 0 22 12Z" />
+                    </svg>
+                </a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/yourprofile" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.58-2.46.69a4.26 4.26 0 0 0 1.88-2.35 8.27 8.27 0 0 1-2.68 1.02A4.13 4.13 0 0 0 15.5 4a4.14 4.14 0 0 0-4.17 4.3c0 .33.04.66.11.97A11.75 11.75 0 0 1 3 5.09a4.24 4.24 0 0 0-.56 2.17c0 1.49.72 2.8 1.83 3.57a4.07 4.07 0 0 1-1.88-.53v.05c0 2.08 1.44 3.83 3.36 4.24a4.17 4.17 0 0 1-1.87.07 4.16 4.16 0 0 0 3.88 2.9A8.35 8.35 0 0 1 2 19.48a11.77 11.77 0 0 0 6.36 1.88c7.63 0 11.8-6.4 11.8-11.95v-.55A8.47 8.47 0 0 0 22.46 6Z" />
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M20.45 3H3.55A1.55 1.55 0 0 0 2 4.55v14.9A1.55 1.55 0 0 0 3.55 21h16.9A1.55 1.55 0 0 0 22 19.45V4.55A1.55 1.55 0 0 0 20.45 3ZM8 18H5V9h3v9ZM6.5 7.5A1.5 1.5 0 1 1 8 6a1.5 1.5 0 0 1-1.5 1.5ZM19 18h-3v-4.5c0-1.15-.85-2-2-2s-2 .85-2 2V18h-3V9h3v1.25a3.5 3.5 0 0 1 3-1.5c2.2 0 4 1.8 4 4V18Z" />
+                    </svg>
+                </a>
+            </div>
+
+
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">Report an Issue</a>
+            </div>
+
+            <p>&copy; 2025 HelpMitra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="p1.js"></script>
+
+</body>
+
+</html>

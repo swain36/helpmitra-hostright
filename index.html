@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpmitra-Connectivity</title>
+    <link rel="stylesheet" href="p1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">HelpMitra</div>
+        <form class="search-box">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">🧠</button>
+        </form>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#serv">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="l1.html" class="login-btn">Login</a>
+
+    </header>
+
+    <img src="bannerHeMi.png" class="imagess" alt="error occurs">
+
+    <h1 id="serv">Hey, Mitra what you are looking for !!</h1><br>
+    <p1>Here you can find the services we offer. </p><br>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-category="online-courses">Online Courses</a></li>
+                <li><a href="#" class="nav-link" data-category="connect-faculties">Connect Faculties</a></li>
+                <li><a href="#" class="nav-link" data-category="extracurricular-activities">Extracurricular
+                        Activities</a></li>
+                <li><a href="#" class="nav-link" data-category="internships">Internships</a></li>
+                <li><a href="#" class="nav-link" data-category="placements">Placements</a></li>
+                <li><a href="#" class="nav-link" data-category="certification">Certification</a></li>
+            </ul>
+        </nav>
+
+        <!-- Course Grid -->
+        <section class="course-grid active" id="online-courses">
+            <div class="course-card">
+                <img src="oc1.jpg" alt="Course 1">
+                <h3>Web Development Bootcamp</h3>
+                <p>Learn the fundamentals of web development, including HTML, CSS, JavaScript, and popular frameworks
+                    like React and Node.js.</p>
+                <p>4.5 ⭐ (45,622)</p>
+                <p><span class="price">₹0</span> <del>₹599</del></p>
+                <button class="premium">Enroll</button>
+            </div>
+
+            <div class="course-card">
+                <img src="oc2.jpg" alt="Course 2">
+                <h3>Data Science and Machine Learning</h3>
+                <p>Data analysis, machine learning algorithms, and tools like Python, R, and TensorFlow to become a data
+                    science expert.</p>
+                <p>4.2 ⭐ (1,809)</p>
+                <p><span class="price">₹599</span> <del>₹3,299</del></p>
+                <button class="premium">Premium</button>
+            </div>
+
+            <div class="course-card">
+                <img src="oc3.jpg" alt="Course 3">
+                <h3>Mechanical Engineering Basics</h3>
+                <p>Understand the core principles of mechanical engineering, including thermodynamics, fluid mechanics,
+                    and material science.</p>
+                <p>4.4 ⭐ (529)</p>
+                <p><span class="price">₹0</span> <del>₹599</del></p>
+                <button class="premium">Enroll</button>
+            </div>
+
+            <div class="course-card">
+                <img src="oc4.jpg" alt="Course 4">
+                <h3>Cybersecurity Essentials</h3>
+                <p>Learn how to protect systems and networks from cyber threats with courses on ethical hacking, network
+                    security, and cryptography.</p>
+                <p>4.4 ⭐ (274)</p>
+                <p><span class="price">₹599</span> <del>₹799</del></p>
+                <button class="premium">Premium</button>
+            </div>
+
+            <div class="course-card">
+                <img src="oc5.jpg" alt="Course 4">
+                <h3>Artificial Intelligence and Robotics</h3>
+                <p>Gain insights into AI and robotics, covering topics like neural networks, robotic kinematics, and
+                    autonomous systems.</p>
+                <p>4.4 ⭐ (274)</p>
+                <p><span class="price">₹599</span> <del>₹799</del></p>
+                <button class="premium">Premium</button>
+            </div>
+
+        </section>
+        <section class="course-grid" id="connect-faculties">
+            <div class="course-card">
+                <img src="cf1.jpg" alt="Course 1">
+                <h3>Dr. pro. vivek singh</h3>
+                <p>Professor of Computer Science</p>
+                <p>Over 20 years of experience in teaching and research in the field of artificial intelligence.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong>viveksingh@example.com</p>
+                    <p><strong>Subjects:</strong> AI, Machine Learning, Data Structures</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="cf2.jpg" alt="Course 2">
+                <h3>Dr. prof. damyanti patel</h3>
+                <p>Associate Professor of Mathematics</p>
+                <p>Specializes in algebra and has published numerous papers in international journals.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong>pateldamyati@example.com</p>
+                    <p><strong>Subjects:</strong>Algebra, Calculus, Statistics</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="cf3.jpg" alt="Course 3">
+                <h3>prof. Akash parmar</h3>
+                <p>Assistant Professor of Physics</p>
+                <p>Focuses on quantum mechanics and he is passionate about teaching.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong>akashparmar@example.com</p>
+                    <p><strong>Subjects:</strong>Quantum Mechanics, Thermodynamics</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="cf4.jpg" alt="Course 4">
+                <h3>prof. Alakh pandey</h3>
+                <p>Assistant Professor of Physics</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong>alakhpandey@example.com</p>
+                    <p><strong>Subjects:</strong>Quantum physics</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="cf5.jpg" alt="Course 4">
+                <h3>prof.Ashis kumar</h3>
+                <p>Assistant Professor of robotics</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong>emilyjohnson@example.com</p>
+                    <p><strong>Subjects:</strong>IOT, Automation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-grid" id="extracurricular-activities">
+            <div class="course-card">
+                <img src="activ1.jpg.jpg" alt="Course 1">
+                <h3>BasketBall</h3>
+                <p>Join our basketball team to improve your skills and compete in local tournaments.</p>
+                <p><span class="price">₹0</span> <del>₹599</del></p>
+                <button class="premium">Free</button>
+            </div>
+
+            <div class="course-card">
+                <img src="activ2.jpg.jpg" alt="Course 2">
+                <h3>Chess Club</h3>
+                <p>Challenge your mind and compete with others in our chess club.</p>
+                <button class="premium">Join</button>
+            </div>
+
+            <div class="course-card">
+                <img src="activ3.jpg.jpg" alt="Course 3">
+                <h3>Drama Club</h3>
+                <p>Express yourself through acting and participate in our annual plays.</p>
+                <p><span class="price">₹0</span> <del>₹599</del></p>
+                <button class="premium">Free</button>
+            </div>
+
+            <div class="course-card">
+                <img src="activ4.jpg.jpg" alt="Course 4">
+                <h3>Music Club</h3>
+                <p>Join our music club to learn instruments and perform in concerts.</p>
+                <p><span class="price">₹599</span> <del>₹799</del></p>
+                <button class="premium">Join</button>
+            </div>
+
+            <div class="course-card">
+                <img src="activ5.jpg.jpg" alt="Course 4">
+                <h3>Coding Club</h3>
+                <p>Learn to code and work on exciting projects with fellow students.</p>
+                <button class="premium">Join</button>
+            </div>
+        </section>
+
+        <section class="course-grid" id="internships">
+            <div class="course-card">
+                <img src="intern1.jpg" alt="Course 1">
+                <h3>Software Development Intern</h3>
+                <p>Company A</p>
+                <p>Location:Bengaluru</p>
+                <p>Duration: 6 Months</p>
+                <button class="premium">Apply Now</button>
+            </div>
+
+            <div class="course-card">
+                <img src="intern2.jpg" alt="Course 2">
+                <h3>Marketing Intern</h3>
+                <p>Company B</p>
+                <p>Location:Chennai,India</p>
+                <p>Duration: 6 Months</p>
+                <button class="premium">Apply Now</button>
+            </div>
+
+            <div class="course-card">
+                <img src="intern3.jpg" alt="Course 3">
+                <h3>Graphic Design Intern</h3>
+                <p>Company C</p>
+                <p>Location:Remote</p>
+                <p>Duration: 4 Months</p>
+                <button class="premium">Apply Now</button>
+            </div>
+
+        </section>
+
+        <section class="course-grid" id="placements">
+            <div class="course-card">
+                <img src="place1.jpg" alt="Course 1">
+                <h3>Software Engineer at TechCorp</h3>
+                <p>Join TechCorp as a Software Engineer and work on cutting-edge technologies.</p>
+                <button class="premium">Read More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="place2.jpg" alt="Course 1">
+                <h3>Data Analyst at DataSolutions</h3>
+                <p>Analyze and interpret complex data sets to help businesses make informed decisions.</p>
+                <button class="premium">Read More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="place3.jpg" alt="Course 1">
+                <h3>Marketing Specialist at MarketGurus</h3>
+                <p>Develop and implement marketing strategies to promote products and services.</p>
+                <button class="premium">Read More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="place4.jpg" alt="Course 1">
+                <h3>Frontend Developer at Narola Infotech</h3>
+                <p>Join Narola Infotech as a Frontend developer and work on cutting-edge technologies.</p>
+                <button class="premium">Read More</button>
+            </div>
+
+
+        </section>
+
+        <section class="course-grid" id="certification">
+            <div class="course-card">
+                <img src="image1.jpg" alt="Course 1">
+                <h3>The Complete AI Guide: Learn ChatGPT</h3>
+                <p>4.5 ⭐ (45,622)</p>
+                <p><span class="price">₹0</span> <del>₹599</del></p>
+                <button class="premium">Free</button>
+            </div>
+
+            <div class="course-card">
+                <img src="image2.jpg" alt="Course 2">
+                <h3>The Complete AI-Powered Copywriting Course</h3>
+                <p>4.2 ⭐ (1,809)</p>
+                <p><span class="price">₹599</span> <del>₹3,299</del></p>
+                <button class="premium">Premium</button>
+            </div>
+
+            <div class="course-card">
+                <img src="image3.jpg" alt="Course 3">
+                <h3>ChatGPT, DeepSeek, Grok & More AI Tools</h3>
+                <p>4.4 ⭐ (529)</p>
+                <p><span class="price">₹0</span> <del>₹599</del></p>
+                <button class="premium">Free</button>
+            </div>
+
+            <div class="course-card">
+                <img src="image4.jpg" alt="Course 4">
+                <h3>Mastering SEO With ChatGPT</h3>
+                <p>4.4 ⭐ (274)</p>
+                <p><span class="price">₹599</span> <del>₹799</del></p>
+                <button class="premium">Premium</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="#">FAQ</a> |
+                    <a href="#">Community</a> |
+                    <a href="#">Blog</a> |
+                    <a href="#serv">Resources</a>
+                </div>
+
+                <div class="social-icons">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M22 12A10 10 0 1 0 12 22V14H9v-2h3V9.5a3.5 3.5 0 0 1 3.5-3.5h2.5V8h-2c-.55 0-1 .45-1 1V12h3l-.5 2h-2.5v8A10 10 0 0 0 22 12Z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/yourprofile" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M22.46 6c-.77.35-1.6.58-2.46.69a4.26 4.26 0 0 0 1.88-2.35 8.27 8.27 0 0 1-2.68 1.02A4.13 4.13 0 0 0 15.5 4a4.14 4.14 0 0 0-4.17 4.3c0 .33.04.66.11.97A11.75 11.75 0 0 1 3 5.09a4.24 4.24 0 0 0-.56 2.17c0 1.49.72 2.8 1.83 3.57a4.07 4.07 0 0 1-1.88-.53v.05c0 2.08 1.44 3.83 3.36 4.24a4.17 4.17 0 0 1-1.87.07 4.16 4.16 0 0 0 3.88 2.9A8.35 8.35 0 0 1 2 19.48a11.77 11.77 0 0 0 6.36 1.88c7.63 0 11.8-6.4 11.8-11.95v-.55A8.47 8.47 0 0 0 22.46 6Z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M20.45 3H3.55A1.55 1.55 0 0 0 2 4.55v14.9A1.55 1.55 0 0 0 3.55 21h16.9A1.55 1.55 0 0 0 22 19.45V4.55A1.55 1.55 0 0 0 20.45 3ZM8 18H5V9h3v9ZM6.5 7.5A1.5 1.5 0 1 1 8 6a1.5 1.5 0 0 1-1.5 1.5ZM19 18h-3v-4.5c0-1.15-.85-2-2-2s-2 .85-2 2V18h-3V9h3v1.25a3.5 3.5 0 0 1 3-1.5c2.2 0 4 1.8 4 4V18Z" />
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms & Conditions</a> |
+                    <a href="#">Report an Issue</a>
+                </div>
+
+                <p>&copy; 2025 HelpMitra. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="p1.js"></script>
+</body>
+
+</html>
