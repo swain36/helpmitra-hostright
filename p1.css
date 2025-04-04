@@ -148,7 +148,8 @@ p1 {
 /* Navigation Bar */
 nav {
     background-color: white;
-    padding: 10px 20px;
+    padding: 12px 8px;
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -158,7 +159,8 @@ nav ul {
     gap: 20px;
     padding: 0;
     margin: 0;
-    margin-left: 22%
+    margin-left: 18%
+    
 }
 
 nav ul li {
@@ -291,7 +293,7 @@ footer {
 }
 
 .footer-container {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     /* Reduce width for better alignment */
     margin: auto;
