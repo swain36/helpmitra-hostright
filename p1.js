@@ -44,6 +44,56 @@ function toggleForm() {
     }
 }
 
+/*login tranfer*/
+
+document.getElementById("login-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+  
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+  
+    const res = await fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password })
+    });
+  
+    const data = await res.json();
+  
+    if (res.ok) {
+      alert("Login successful!");
+      window.location.href = "p2.html";
+    } else {
+      alert(data.message || "Login failed");
+    }
+  });
+
+  document.getElementById("signup-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+  
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("signupEmail").value;
+    const password = document.getElementById("signupPassword").value;
+  
+    const res = await fetch("http://localhost:3000/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, password })
+    });
+  
+    const data = await res.json();
+  
+    if (res.ok) {
+      alert("Signup successful! Please login.");
+      window.location.href = "l1.html";
+    } else {
+      alert(data.message || "Signup failed");
+    }
+  });
+
+
+
+
 /*service */
 
 window.onload = function () {
@@ -54,3 +104,20 @@ window.onload = function () {
         }
     }
 };
+
+/*profile icon */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const profileIcon = document.getElementById("profileIcon");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  profileIcon.addEventListener("click", (event) => {
+    event.stopPropagation();
+    dropdownMenu.classList.toggle("show");
+  });
+
+  document.addEventListener("click", () => {
+    dropdownMenu.classList.remove("show");
+  });
+});
+

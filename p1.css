@@ -131,19 +131,6 @@ p1 {
     margin-top: 2%;
 }
 
-/*profile*/
-.prob {
-    background-color: #181a1c;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: px;
-}
-
-
 
 /* Navigation Bar */
 nav {
@@ -283,6 +270,10 @@ nav ul li a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 90%;
 }
+
+.toggle:hover {
+    color: #1f90a3; /* blue on hover or choose any color */
+  }
 
 /*footer*/
 footer {
@@ -464,23 +455,62 @@ button.submit-btn:hover {
     background-color: #3d90a1;
 }
 
-.profile-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid white;
+/*profile icon*/
+
+.profile-container {
+    position: relative;
+  }
+
+.profile-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* makes it a circle */
+    cursor: pointer;
+    object-fit: cover;   /* makes sure image fits well */
+    border: 2px solid #0d0e0d; /* optional border */
 }
 
-.profile a {
-    display: flex;
-    align-items: center;
-}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 100;
+    top: 100%;
+    right: 0;
+    border-radius: 8px;
+    min-width: 200px;
+  }
+  /* Show state */
+  .dropdown.show {
+    display: block;
+  }
+  
+  /* Style the list */
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown ul li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown ul li:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }  
+  
 
 /* Styling for Font Awesome Icon */
-.profile i {
-    font-size: 25px;
-    color: rgb(14, 13, 13);
-}
 
 .social-icons {
     display: flex;
