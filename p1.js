@@ -121,3 +121,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* api  */
+
+fetch("https://helpmitra.onrender.com/api/data")
+  .then(response => response.json())
+  .then(data => {
+    console.log("Data from backend:", data);
+    // You can now use `data` to update the UI
+  })
+  .catch(error => {
+    console.error("Error fetching data:", error);
+  });
+
+
