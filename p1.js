@@ -46,50 +46,58 @@ function toggleForm() {
 
 /*login tranfer*/
 
-document.getElementById("login-form").addEventListener("submit", async function (e) {
+  const signupForm = document.querySelector("signup-form");
+
+  signupForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-  
-    const email = document.getElementById("loginEmail").value;
-    const password = document.getElementById("loginPassword").value;
-  
-    const res = await fetch("http://localhost:3000/login", {
+
+    const name = signupForm.querySelector('input[placeholder="Full Name"]').value;
+    const email = signupForm.querySelector('input[placeholder="Email"]').value;
+    const password = signupForm.querySelector('input[placeholder="Password"]').value;
+
+    const res = await fetch("https://helpmitra.onrender.com/api/signup", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password })
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name, email, password })
     });
-  
+
     const data = await res.json();
-  
-    if (res.ok) {
-      alert("Login successful!");
-      window.location.href = "p2.html";
+
+    if (res.status === 201) {
+      alert("Signup successful! Redirecting to login...");
+      window.location.href = "l1.html"; // your login page
     } else {
-      alert(data.message || "Login failed");
+      alert(data.message);
     }
   });
 
-  document.getElementById("signup-form").addEventListener("submit", async function (e) {
+  const loginForm = document.querySelector("login-form");
+
+  loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-  
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("signupEmail").value;
-    const password = document.getElementById("signupPassword").value;
-  
-    const res = await fetch("http://localhost:3000/signup", {
+
+    const email = loginForm.querySelector('input[placeholder="Email"]').value;
+    const password = loginForm.querySelector('input[placeholder="Password"]').value;
+
+    const res = await fetch("https://helpmitra.onrender.com/api/login", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, password })
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email, password })
     });
-  
+
     const data = await res.json();
-  
-    if (res.ok) {
-      alert("Signup successful! Please login.");
-      window.location.href = "l1.html";
+
+    if (res.status === 200) {
+      alert("Login successful! Redirecting...");
+      window.location.href = "p2.html"; // the page after login
     } else {
-      alert(data.message || "Signup failed");
+      alert(data.message);
     }
-  });
+  });  
 
 
 
