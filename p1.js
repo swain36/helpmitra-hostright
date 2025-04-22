@@ -107,19 +107,17 @@ window.onload = function () {
 
 /*profile icon */
 
-document.addEventListener("DOMContentLoaded", function () {
-  const profileIcon = document.getElementById("profileIcon");
-  const dropdownMenu = document.getElementById("dropdownMenu");
+function toggleDropdown() {
+  const dropdown = document.getElementById("dropdownMenu");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
 
-  profileIcon.addEventListener("click", (event) => {
-    event.stopPropagation();
-    dropdownMenu.classList.toggle("show");
-  });
-
-  document.addEventListener("click", () => {
-    dropdownMenu.classList.remove("show");
-  });
-});
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+  if (!event.target.closest('.profile')) {
+    document.getElementById("dropdownMenu").style.display = "none";
+  }
+};
 
 /* api  */
 

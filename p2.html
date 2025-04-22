@@ -28,20 +28,16 @@
             <li><a href="#">Feed</a></li>
         </ul>
 
-        <div class="profile-container">
-            <img src="profo.png" alt="Profile Icon" id="profileIcon">
-            <div id="dropdownMenu" class="dropdown">
-              <ul>
-                <li><a href="#">Google Account</a></li>
-                <li><a href="#">Switch account</a></li>
-                <li><a href="#">Sign out</a></li>
-                <li><a href="#">YouTube Studio</a></li>
-                <li><a href="#">Purchases</a></li>
-                <li><a href="#">Your data</a></li>
-                <li><a href="#">Appearance</a></li>
-              </ul>
+        <div class="profile" onclick="toggleDropdown()">
+            <div class="profile-icon"><img src="profo.png" class="mypic" alt="profile"></div>
+            <div class="dropdown" id="dropdownMenu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Notes</a>
+              <a href="#" class="logout">Logout</a>
             </div>
           </div>
+        </div>
             
     </header>
 
